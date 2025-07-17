@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Oliver Crochês</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>OLIVER CROCHÊS</h1>
+        <nav>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#carrinho">Carrinho</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section id="banner">
+        <h2>Feito à mão com carinho 💙</h2>
+        <p>Toalhas, bolsas e amigurumis únicos.</p>
+    </section>
+
+    <section id="catalogo" class="produtos">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="fotos/exemplo1.jpg" alt="Produto 1">
+            <h3>Toalha Azul</h3>
+            <p class="preco">R$ 25,00</p>
+            <button onclick="adicionarAoCarrinho('Toalha Azul', 25)">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="fotos/exemplo2.jpg" alt="Produto 2">
+            <h3>Amigurumi Gatinho</h3>
+            <p class="preco">R$ 60,00</p>
+            <button onclick="adicionarAoCarrinho('Amigurumi Gatinho', 60)">Adicionar ao Carrinho</button>
+        </div>
+        <!-- Adicione mais produtos copiando -->
+    </section>
+
+    <section id="carrinho">
+        <h2>Carrinho de Compras 🛒</h2>
+        <ul id="lista-carrinho"></ul>
+        <p id="total">Total: R$ 0,00</p>
+
+        <h3>Finalize o Pedido:</h3>
+        <form id="formulario">
+            <input type="text" placeholder="Seu nome" id="nome" required><br>
+            <input type="text" placeholder="Seu WhatsApp" id="contato" required><br>
+            <button type="submit">Gerar Pedido PIX</button>
+        </form>
+        <div id="pix-info" style="display:none;">
+            <p>Chave PIX: <strong>SEUEMAIL@PIX.COM</strong></p>
+            <p>Valor: <span id="valorPix"></span></p>
+            <p>Depois do pagamento, envie o comprovante pelo WhatsApp!</p>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Siga a gente nas redes sociais:</p>
+        <a href="https://wa.me/SEUNUMERO" target="_blank" class="botao">WhatsApp</a>
+        <a href="https://instagram.com/seuuser" target="_blank" class="botao">Instagram</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 OLIVER CROCHÊS</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
