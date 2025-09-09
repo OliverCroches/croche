@@ -1,283 +1,98 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>OLIVER CROCHÊS</title>
-  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet" />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #ffffff;
-      color: #000000;
-    }
-    header {
-      background-color: #b2d8b2;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 3px solid #000000;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #000000;
-      font-family: Arial, sans-serif;
-    }
-    header p {
-      font-family: 'Pacifico', cursive;
-      color: #000000;
-      font-size: 1.3em;
-      margin-top: 5px;
-    }
-    h2 {
-      text-align: center;
-      background-color: #e6f5e6;
-      padding: 10px;
-      margin: 20px 0 10px;
-      border-top: 2px solid #000000;
-      border-bottom: 2px solid #000000;
-    }
-    .produtos {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 20px;
-    }
-    .produto {
-      background-image: url('fotos/fundopretodetalhe.jpg');
-      background-size: cover;
-      background-position: center;
-      border-radius: 10px;
-      margin: 15px;
-      padding: 15px;
-      width: 250px;
-      box-shadow: 0 0 15px #00000033;
-      text-align: center;
-      text-decoration: none;
-      color: #000000;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-    }
-    .produto img {
-      max-width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 0 10px #00000044;
-      transition: opacity 0.6s ease;
-    }
-    .produto img.img2 {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      width: calc(100% - 30px);
-      opacity: 0;
-    }
-    .produto:hover img.img1 {
-      opacity: 0;
-    }
-    .produto:hover img.img2 {
-      opacity: 1;
-    }
-    .produto h3 {
-      margin: 10px 0 5px;
-      color: #000000;
-    }
-    .produto p {
-      margin: 5px 0;
-      font-size: 1.2em;
-      font-weight: bold;
-      color: #000000;
-    }
-    .aviso-personalizado {
-      background-color: #e6f5e6;
-      color: #000000;
-      padding: 12px;
-      text-align: center;
-      font-size: 0.95em;
-      font-weight: bold;
-      margin: 20px auto;
-      max-width: 700px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px #88888844;
-      border: 1px solid #000000;
-    }
-    footer {
-      background-color: #f1f1f1;
-      color: #555555;
-      text-align: center;
-      padding: 10px;
-      border-top: 2px solid #000000;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>OLIVER CROCHÊS</h1>
-    <p>Produtos artesanais com amor e qualidade</p>
-  </header>
-
-  <!-- Valores dos modelos -->
-  <h2>Valores dos modelos</h2>
-  <main class="produtos">
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20AMIGURUMI%2010CM" target="_blank">
-      <img src="fotos/amigurumi 10 cm.jpeg" alt="Amigurumi 10 cm" />
-      <h3>AMIGURUMI 10 CM</h3>
-      <p>R$120,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20AMIGURUMI%2015CM" target="_blank">
-      <img src="fotos/amigurumi 15 cm.jpeg" alt="Amigurumi 15 cm" />
-      <h3>AMIGURUMI 15 CM</h3>
-      <p>R$160,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20AMIGURUMI%2020CM" target="_blank">
-      <img src="fotos/amigurumi 20cm.jpeg" alt="Amigurumi 20 cm" />
-      <h3>AMIGURUMI 20 CM</h3>
-      <p>R$200,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20da%20BANDEIRA%2025X30CM" target="_blank">
-      <img src="fotos/bandeira.jpeg" alt="Bandeira 25x30 cm" />
-      <h3>BANDEIRA 25X30CM</h3>
-      <p>R$120,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20da%20ALMOFADA%2030CM" target="_blank">
-      <img src="fotos/almofada.jpeg" alt="Almofada 30cm" />
-      <h3>ALMOFADA 30CM</h3>
-      <p>R$95,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20SNOOPY%2015CM" target="_blank">
-      <img src="fotos/snoopy.jpeg" alt="Snoopy 15cm" />
-      <h3>SNOOPY 15CM</h3>
-      <p>R$80,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20STITCH%2015CM" target="_blank">
-      <img src="fotos/stitch.jpeg" alt="Stitch 15cm" />
-      <h3>STITCH 15CM</h3>
-      <p>R$80,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20CHAVEIRO%207CM" target="_blank">
-      <img src="fotos/chaveiro.jpeg" alt="Chaveiro 7cm" />
-      <h3>CHAVEIRO 7CM</h3>
-      <p>R$40,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20das%20TOUCAS%20INVERNO" target="_blank">
-      <img src="fotos/toucas inverno.jpeg" alt="Toucas de Inverno" />
-      <h3>TOUCAS INVERNO</h3>
-      <p>R$70,00 a R$85,00</p>
-    </a>
-  </main>
-
-  <!-- Pedidos já feitos -->
+    <!-- Pedidos já feitos -->
   <h2>Pedidos já feitos</h2>
   <section class="produtos">
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20TAPEÇARIA%20DRAGÕES" target="_blank">
-      <img src="fotos/tapecaria_dragoes.jpeg" alt="Tapeçaria Dragões" />
+      <img src="fotos/fotos/tapecaria_dragoes.jpeg" alt="Tapeçaria Dragões" />
       <h3>TAPEÇARIA DRAGÕES</h3>
       <p>R$70,00</p>
     </a>
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20QUADRO%20SPIDER-MAN" target="_blank">
-      <img src="fotos/quadro_spiderman.jpeg" alt="Quadro Spider-Man" />
+      <img src="fotos/fotos/quadro_spiderman.jpeg" alt="Quadro Spider-Man" />
       <h3>QUADRO SPIDER-MAN</h3>
       <p>R$70,00</p>
     </a>
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20DIVERTIDAMENTE" target="_blank">
-      <img src="fotos/divertidamente.jpeg" alt="Divertidamente" />
+      <img src="fotos/fotos/divertidamente.jpeg" alt="Divertidamente" />
       <h3>DIVERTIDAMENTE</h3>
       <p>R$70,00</p>
     </a>
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20PIKACHU" target="_blank">
-      <img src="fotos/pikachu.jpeg" alt="Pikachu" />
+      <img src="fotos/fotos/pikachu.jpeg" alt="Pikachu" />
       <h3>PIKACHU</h3>
       <p>R$70,00</p>
     </a>
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20da%20CORALINE" target="_blank">
-      <img src="fotos/coraline.jpeg" alt="Coraline" />
+      <img src="fotos/fotos/coraline.jpeg" alt="Coraline" />
       <h3>CORALINE</h3>
       <p>R$70,00</p>
     </a>
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20da%20KUROMI" target="_blank">
-      <img src="fotos/kuromi.jpeg" alt="Kuromi" />
+      <img src="fotos/fotos/kuromi.jpeg" alt="Kuromi" />
       <h3>KUROMI</h3>
       <p>R$70,00</p>
     </a>
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20SNOOPY%20GIGANTE" target="_blank">
-      <img src="fotos/snoopy_gigante.jpeg" alt="Snoopy Gigante" />
+      <img src="fotos/fotos/snoopy_gigante.jpeg" alt="Snoopy Gigante" />
       <h3>SNOOPY GIGANTE</h3>
       <p>R$70,00</p>
     </a>
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20da%20HELLO%20KITTY" target="_blank">
-      <img src="fotos/hello_kitty.jpeg" alt="Hello Kitty" />
+      <img src="fotos/fotos/hello_kitty.jpeg" alt="Hello Kitty" />
       <h3>HELLO KITTY</h3>
       <p>R$70,00</p>
     </a>
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20da%20MORTE" target="_blank">
-      <img src="fotos/morte.jpeg" alt="Morte" />
+      <img src="fotos/fotos/morte.jpeg" alt="Morte" />
       <h3>TAPEÇARIA ELEMENTO MORTE ORDEM PARANORMAL</h3>
       <p>R$70,00</p>
     </a>
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20DEAN" target="_blank">
-      <img src="fotos/dean.jpeg" alt="Dean" />
+      <img src="fotos/fotos/dean.jpeg" alt="Dean" />
       <h3>DEAN WINCHESTER</h3>
       <p>R$70,00</p>
     </a>
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20COELHO" target="_blank">
-      <img src="fotos/coelho.jpeg" alt="Coelho" />
+      <img src="fotos/fotos/coelho.jpeg" alt="Coelho" />
       <h3>COELHO PELÚCIA</h3>
       <p>R$70,00</p>
     </a>
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20KUROO" target="_blank">
-      <img src="fotos/kuroo.jpeg" alt="Kuroo" />
+      <img src="fotos/fotos/kuroo.jpeg" alt="Kuroo" />
       <h3>KUROO HAIKYUU</h3>
       <p>R$70,00</p>
     </a>
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20da%20LILLY%20EVANS" target="_blank">
-      <img src="fotos/lilly_evans.jpeg" alt="Lilly Evans" />
+      <img src="fotos/fotos/lilly_evans.jpeg" alt="Lilly Evans" />
       <h3>LILLY EVANS</h3>
       <p>R$70,00</p>
     </a>
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20KAISER" target="_blank">
-      <img src="fotos/kaiser.jpeg" alt="Kaiser" />
+      <img src="fotos/fotos/kaiser.jpeg" alt="Kaiser" />
       <h3>KAISER ORDEM PARANORMAL</h3>
       <p>R$70,00</p>
     </a>
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20BUQUE" target="_blank">
-      <img src="fotos/buque.jpeg" alt="Buque" />
+      <img src="fotos/fotos/buque.jpeg" alt="Buque" />
       <h3>BUQUÊ / TOALHA</h3>
       <p>R$70,00</p>
     </a>
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20JOEY" target="_blank">
-      <img src="fotos/joey.jpeg" alt="Joey" />
+      <img src="fotos/fotos/joey.jpeg" alt="Joey" />
       <h3>JOEY ORDEM PARANORMAL</h3>
       <p>R$70,00</p>
     </a>
     <!-- Produto com 2 imagens -->
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20DINOSSAURO" target="_blank">
-      <img src="fotos/dinossauro1.jpeg" alt="Dinossauro" class="img1" />
-      <img src="fotos/dinossauro2.jpeg" alt="Dinossauro" class="img2" />
+      <img src="fotos/fotos/dinossauro1.jpeg" alt="Dinossauro" class="img1" />
+      <img src="fotos/fotos/dinossauro2.jpeg" alt="Dinossauro" class="img2" />
       <h3>DINOSSAURO</h3>
       <p>R$70,00</p>
     </a>
     <!-- Produto com 2 imagens -->
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20da%20TOUKA%20SPIDER-MAN" target="_blank">
-      <img src="fotos/touka1.jpeg" alt="Touka Spider-Man" class="img1" />
-      <img src="fotos/touka2.jpeg" alt="Touka Spider-Man" class="img2" />
+      <img src="fotos/fotos/touka1.jpeg" alt="Touka Spider-Man" class="img1" />
+      <img src="fotos/fotos/touka2.jpeg" alt="Touka Spider-Man" class="img2" />
       <h3>TOUCA SPIDER-MAN</h3>
       <p>R$70,00</p>
     </a>
   </section>
-
-  <div class="aviso-personalizado">
-    Não encontrou o que queria ou precisa de outro tamanho?<br />
-    É só chamar no WhatsApp ou enviar uma DM no Instagram (links abaixo)! Fazemos por encomenda 💬💖
-  </div>
-
-  <section class="contatos">
-    <a href="https://wa.me/5541992270982" target="_blank">📱 Fale conosco no WhatsApp: (41) 99227-0982</a>
-    <a href="https://www.instagram.com/crochet_olliver" target="_blank">📸 Siga nosso Instagram: @crochet_olliver</a>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 OLIVER CROCHÊS - Todos os direitos reservados.</p>
-  </footer>
-</body>
-</html>
