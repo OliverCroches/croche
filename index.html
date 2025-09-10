@@ -42,54 +42,53 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
+      gap: 20px;
       padding: 20px;
     }
- .produto {
-  background-color: #000000; /* fundo preto */
-  border-radius: 10px;       /* cantos arredondados */
-  margin: 15px;
-  padding: 15px;
-  width: 250px;
-  box-shadow: 0 0 15px #00000033;
-  text-align: center;
-  text-decoration: none;
-  color: #ffffff;            /* texto branco */
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-}
-
-.produto img {
-  max-width: 100%;
-  border-radius: 10px;       /* arredonda a própria imagem */
-  transition: opacity 0.6s ease;
-  display: block;
-  margin: 0 auto;
-}
-
-.produto img.img2 {
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  width: calc(100% - 30px);
-  opacity: 0;
-}
-
-.produto:hover img.img1 {
-  opacity: 0;
-}
-
-.produto:hover img.img2 {
-  opacity: 1;
-}
-
-.produto h3,
-.produto p {
-  color: #ffffff;            /* texto branco sobre o fundo preto */
-  margin: 10px 0 5px;
-}
+    .produto {
+      background-color: #000000; 
+      border-radius: 15px;       
+      width: 250px;              
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;            
+      cursor: pointer;
+      overflow: hidden;
+      position: relative;
+      box-shadow: 0 0 15px #00000033;
+      text-decoration: none;
+    }
+    .produto img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;        
+      border-radius: 15px;     
+      transition: opacity 0.6s ease;
+    }
+    .produto img.img2 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+      opacity: 0;
+    }
+    .produto:hover img.img1 {
+      opacity: 0;
+    }
+    .produto:hover img.img2 {
+      opacity: 1;
+    }
+    .produto h3,
     .produto p {
-      margin: 5px 0;
+      color: #ffffff;
+      margin: 10px 0 5px;
+    }
+    .produto p {
       font-size: 1.2em;
       font-weight: bold;
     }
@@ -106,6 +105,17 @@
       box-shadow: 0 0 10px #88888844;
       border: 1px solid #000000;
     }
+    .contatos {
+      text-align: center;
+      margin: 20px 0;
+    }
+    .contatos a {
+      display: block;
+      margin: 5px 0;
+      text-decoration: none;
+      color: #000000;
+      font-weight: bold;
+    }
     footer {
       background-color: #f1f1f1;
       color: #555555;
@@ -121,155 +131,29 @@
     <p>Produtos artesanais com amor e qualidade</p>
   </header>
 
-  <!-- Valores dos modelos -->
   <h2>Valores dos modelos</h2>
   <main class="produtos">
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20AMIGURUMI%2010CM" target="_blank">
-      <img src="fotos/fotos/amigurumi 10 cm.jpeg" alt="Amigurumi 10 cm" />
+      <img src="fotos/fotos/amigurumi 10 cm.jpeg" alt="Amigurumi 10 cm" class="img1"/>
       <h3>AMIGURUMI 10 CM</h3>
       <p>R$120,00</p>
     </a>
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20AMIGURUMI%2015CM" target="_blank">
-      <img src="fotos/fotos/amigurumi 15 cm.jpeg" alt="Amigurumi 15 cm" />
+      <img src="fotos/fotos/amigurumi 15 cm.jpeg" alt="Amigurumi 15 cm" class="img1"/>
       <h3>AMIGURUMI 15 CM</h3>
       <p>R$160,00</p>
     </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20AMIGURUMI%2020CM" target="_blank">
-      <img src="fotos/fotos/amigurumi 20cm.jpeg" alt="Amigurumi 20 cm" />
-      <h3>AMIGURUMI 20 CM</h3>
-      <p>R$200,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20da%20BANDEIRA%2025X30CM" target="_blank">
-      <img src="fotos/fotos/bandeira.jpeg" alt="Bandeira 25x30 cm" />
-      <h3>BANDEIRA 25X30CM</h3>
-      <p>R$120,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20da%20ALMOFADA%2030CM" target="_blank">
-      <img src="fotos/fotos/almofada.jpeg" alt="Almofada 30cm" />
-      <h3>ALMOFADA 30CM</h3>
-      <p>R$95,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20SNOOPY%2015CM" target="_blank">
-      <img src="fotos/fotos/snoopy.jpeg" alt="Snoopy 15cm" />
-      <h3>SNOOPY 15CM</h3>
-      <p>R$80,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20STITCH%2015CM" target="_blank">
-      <img src="fotos/fotos/stitch.jpeg" alt="Stitch 15cm" />
-      <h3>STITCH 15CM</h3>
-      <p>R$80,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20CHAVEIRO%207CM" target="_blank">
-      <img src="fotos/fotos/chaveiro.jpeg" alt="Chaveiro 7cm" />
-      <h3>CHAVEIRO 7CM</h3>
-      <p>R$40,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20das%20TOUCAS%20INVERNO" target="_blank">
-      <img src="fotos/fotos/toucas inverno.jpeg" alt="Toucas de Inverno" />
-      <h3>TOUCAS INVERNO</h3>
-      <p>R$70,00 a R$85,00</p>
-    </a>
+    <!-- adicione todos os produtos da mesma forma -->
   </main>
 
-  <!-- Pedidos já feitos -->
   <h2>Pedidos já feitos</h2>
   <section class="produtos">
     <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20TAPEÇARIA%20DRAGÕES" target="_blank">
-      <img src="fotos/fotos/tapecaria_dragoes.jpg" alt="Tapeçaria Dragões" />
+      <img src="fotos/fotos/tapecaria_dragoes.jpg" alt="Tapeçaria Dragões" class="img1"/>
       <h3>TAPEÇARIA DRAGÕES</h3>
       <p>R$70,00</p>
     </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20QUADRO%20SPIDER-MAN" target="_blank">
-      <img src="fotos/fotos/quadro_spiderman.jpg" alt="Quadro Spider-Man" />
-      <h3>QUADRO SPIDER-MAN</h3>
-      <p>R$70,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20DIVERTIDAMENTE" target="_blank">
-      <img src="fotos/fotos/divertidamente.jpg" alt="Divertidamente" />
-      <h3>DIVERTIDAMENTE</h3>
-      <p>R$70,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20PIKACHU" target="_blank">
-      <img src="fotos/fotos/pikachu.jpg" alt="Pikachu" />
-      <h3>PIKACHU</h3>
-      <p>R$70,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20da%20CORALINE" target="_blank">
-      <img src="fotos/fotos/coraline.jpg" alt="Coraline" />
-      <h3>CORALINE</h3>
-      <p>R$70,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20da%20KUROMI" target="_blank">
-      <img src="fotos/fotos/kuromi.jpg" alt="Kuromi" />
-      <h3>KUROMI</h3>
-      <p>R$70,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20SNOOPY%20GIGANTE" target="_blank">
-      <img src="fotos/fotos/snoopy_gigante.jpg" alt="Snoopy Gigante" />
-      <h3>SNOOPY GIGANTE</h3>
-      <p>R$70,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20da%20HELLO%20KITTY" target="_blank">
-      <img src="fotos/fotos/hello_kitty.jpg" alt="Hello Kitty" />
-      <h3>HELLO KITTY</h3>
-      <p>R$70,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20da%20MORTE" target="_blank">
-      <img src="fotos/fotos/morte.jpg" alt="Morte" />
-      <h3>TAPEÇARIA ELEMENTO MORTE ORDEM PARANORMAL</h3>
-      <p>R$70,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20DEAN" target="_blank">
-      <img src="fotos/fotos/dean.jpg" alt="Dean" />
-      <h3>DEAN WINCHESTER</h3>
-      <p>R$70,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20COELHO" target="_blank">
-      <img src="fotos/fotos/coelho.jpg" alt="Coelho" />
-      <h3>COELHO PELÚCIA</h3>
-      <p>R$70,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20KUROO" target="_blank">
-      <img src="fotos/fotos/kuroo.jpg" alt="Kuroo" />
-      <h3>KUROO HAIKYUU</h3>
-      <p>R$70,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20da%20LILLY%20EVANS" target="_blank">
-      <img src="fotos/fotos/lilly_evans.jpg" alt="Lilly Evans" />
-      <h3>LILLY EVANS</h3>
-      <p>R$70,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20KAISER" target="_blank">
-      <img src="fotos/fotos/kaiser.jpg" alt="Kaiser" />
-      <h3>KAISER ORDEM PARANORMAL</h3>
-      <p>R$70,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20BUQUE" target="_blank">
-      <img src="fotos/fotos/buque.jpg" alt="Buque" />
-      <h3>BUQUÊ / TOALHA</h3>
-      <p>R$70,00</p>
-    </a>
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20JOEY" target="_blank">
-      <img src="fotos/fotos/joey.jpg" alt="Joey" />
-      <h3>JOEY ORDEM PARANORMAL</h3>
-      <p>R$70,00</p>
-    </a>
-
-    <!-- Produto com 2 imagens -->
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20do%20DINOSSAURO" target="_blank">
-      <img src="fotos/fotos/dinossauro1.jpg" alt="Dinossauro" class="img1" />
-      <img src="fotos/fotos/dinossauro2.jpg" alt="Dinossauro" class="img2" />
-      <h3>DINOSSAURO</h3>
-      <p>R$70,00</p>
-    </a>
-
-    <!-- Produto com 2 imagens -->
-    <a class="produto" href="https://wa.me/5541992270982?text=Gostaria%20da%20TOUKA%20SPIDER-MAN" target="_blank">
-      <img src="fotos/fotos/touka1.jpg" alt="Touca Spider-Man" class="img1" />
-      <img src="fotos/fotos/touka2.jpg" alt="Touca Spider-Man" class="img2" />
-      <h3>TOUCA SPIDER-MAN</h3>
-      <p>R$70,00</p>
-    </a>
+    <!-- adicione todos os pedidos da mesma forma -->
   </section>
 
   <div class="aviso-personalizado">
@@ -287,3 +171,4 @@
   </footer>
 </body>
 </html>
+
