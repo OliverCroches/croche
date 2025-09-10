@@ -44,50 +44,54 @@
       justify-content: center;
       padding: 20px;
     }
-    .produto {
-      background-image: url('fotos/fotos/fundopretodetalhe.jpg');
-      background-size: cover;
-      background-position: center;
-      border-radius: 10px;
-      margin: 15px;
-      padding: 15px;
-      width: 250px;
-      box-shadow: 0 0 15px #00000033;
-      text-align: center;
-      text-decoration: none;
-      color: #000000;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-    }
-    .produto img {
-      max-width: 100%;
-      border-radius: 8px;
-      box-shadow: 0 0 10px #00000044;
-      transition: opacity 0.6s ease;
-    }
-    .produto img.img2 {
-      position: absolute;
-      top: 15px;
-      left: 15px;
-      width: calc(100% - 30px);
-      opacity: 0;
-    }
-    .produto:hover img.img1 {
-      opacity: 0;
-    }
-    .produto:hover img.img2 {
-      opacity: 1;
-    }
-    .produto h3 {
-      margin: 10px 0 5px;
-      color: #000000;
-    }
+ .produto {
+  background-color: #000000; /* fundo preto */
+  border-radius: 10px;       /* cantos arredondados */
+  margin: 15px;
+  padding: 15px;
+  width: 250px;
+  box-shadow: 0 0 15px #00000033;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;            /* texto branco */
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.produto img {
+  max-width: 100%;
+  border-radius: 10px;       /* arredonda a própria imagem */
+  transition: opacity 0.6s ease;
+  display: block;
+  margin: 0 auto;
+}
+
+.produto img.img2 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  width: calc(100% - 30px);
+  opacity: 0;
+}
+
+.produto:hover img.img1 {
+  opacity: 0;
+}
+
+.produto:hover img.img2 {
+  opacity: 1;
+}
+
+.produto h3,
+.produto p {
+  color: #ffffff;            /* texto branco sobre o fundo preto */
+  margin: 10px 0 5px;
+}
     .produto p {
       margin: 5px 0;
       font-size: 1.2em;
       font-weight: bold;
-      color: #000000;
     }
     .aviso-personalizado {
       background-color: #e6f5e6;
